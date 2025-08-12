@@ -1,0 +1,319 @@
+/* Hero section */
+.hero {
+  background-image: url("../assets/images/Hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.mob-btn-groups {
+  display: none !important;
+}
+
+.mob-btn-groups .btn-white-custom {
+  width: 218px;
+}
+
+.img-container {
+  max-width: 664px;
+  max-height: 564px;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 990px) {
+  .desk-btn-groups {
+    display: none !important;
+  }
+  .mob-btn-groups {
+    display: flex !important;
+  }
+}
+
+/*Sell Card*/
+.sell-card {
+  width: 302px;
+  height: 393px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.sell-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  z-index: 30;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.holo-shine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+  border-radius: 1rem;
+  position: absolute;
+}
+
+.group:hover .holo-shine::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.holo-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+/*Industry section*/
+.text-column{
+    max-width: 678px;
+}
+.try-button{
+    padding-inline: 107px; ;
+}
+.industry-img{
+    max-width: 578px; 
+    max-height: 589px;
+}
+
+/*Automation section*/
+.automation-content p {
+  max-width: 740px;
+}
+
+.info-card {
+  max-width: 616px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-card .divider {
+  width: 1px;
+  background-color: var(--color-secondary);
+  align-self: stretch;
+}
+
+.icon-placeholder {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.icon-placeholder img {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+/*Healt & Care section */
+.health-content{
+    background-image: url('../assets/images/Hero-bg.png'); 
+    background-size: cover; 
+    background-position: center;  
+    padding-block: 78px;
+}
+.health-content h2{
+    max-width: 927px;
+}
+.health-content p{
+    max-width: 787px;
+}
+
+/*Results section*/
+.results-text{
+    display: none;
+}
+
+/*Choose section*/
+.choose-title {
+  margin-bottom: 100px;
+}
+.choose-title p{
+  max-width: 620px
+}
+
+.feature-card {
+  height: 266px;
+  position: relative;
+  padding-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  max-width: 20rem;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 103px;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.feature-card-body {
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.feature-card-text {
+  color: var(--color-secondary);
+}
+
+/*Tools section*/
+.tools-title{
+    width: 100%;
+    max-width: 783px;
+    margin-bottom: 96px;;
+}
+
+/*Pricing section*/
+.pricing-text {
+  max-width: 844px;
+}
+.pricing-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.price-card-title {
+  font-size: 28px;
+}
+.price {
+  font-size: 48px;
+}
+
+.featured {
+  background-color: var(--color-primary);
+}
+.check-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.pricing-card {
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card .price,
+.pricing-card .price-card-title {
+  transition: color 0.3s ease;
+}
+
+.pricing-card .check-icon {
+  transition: fill 0.3s ease;
+}
+
+.pricing-card .btn-primary-custom {
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.pricing-card:hover {
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.pricing-card:hover .price,
+.pricing-card:hover .price-card-title {
+  color: var(--color-white) !important;
+}
+
+.pricing-card:hover .check-icon {
+  fill: var(--color-white) !important;
+}
+
+.pricing-card:hover .btn-primary-custom {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+
+/*Generation section*/
+.generation-content {
+  max-width: 591px;
+}
+
+.landing-image {
+  scale: 150%;
+  transform-origin: bottom center;
+}
+
+@media screen and (max-width: 1440px) {
+  .landing-image {
+    scale: 100%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .results-text {
+    display: block;
+  }
+  .choose-content {
+    gap: 100px;
+  }
+  .profile-name {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-img {
+    padding-left: 0px !important;
+  }
+  .tools-title {
+    margin-bottom: 54px;
+  }
+  .icon-placeholder {
+    width: 24px;
+    height: 24px;
+  }
+  .info-card h5 {
+    font-size: 14px;
+  }
+  .info-card p {
+    font-size: 12px;
+  }
+}
