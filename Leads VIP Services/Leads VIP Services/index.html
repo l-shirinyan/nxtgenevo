@@ -94,9 +94,9 @@
 
 <main>
   <!-- Hero section-->
-   <section class="container-fluid hero py-5 px-3 block-column">
+   <section class="container-fluid hero d-flex justify-content-center align-items-center py-5 px-3 block-column">
       <div class="row justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
-        <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+        <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
           <div class="w-100" style="max-width: 591px">
             <h2 class="text-header text-primary-custom fw-bold text-center text-lg-start mb-3">
               Your Next Client, Delivered by AI
@@ -111,19 +111,19 @@
             <button class="w-100 btn btn-white-custom">Purchase Leads</button>
           </div>
         </div>
-        <div class="col-lg-8 img-container mt-4 mt-lg-0 team-img">
-          <img src="assets/images/team.png" alt="Team Image"  />
+        <div class="col-lg-6 mt-4 mt-lg-0 d-flex justify-content-center team-img">
+          <img src="assets/images/team.png" alt="Team Image" class="img-fluid" />
         </div>
-          <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3 mob-btn-groups">
+          <div class="col-lg-6 d-flex flex-row align-items-center justify-content-center gap-3 flex-wrap mt-3 mob-btn-groups">
             <button class="btn btn-primary-custom">Become an Affiliate</button>
-            <button class="btn btn-white-custom">Purchase Leads</button>
+            <button class="btn btn-white-custom btn-white-hero">Purchase Leads</button>
           </div>
       </div>
     </section> 
 
 
 <!--Sell section-->
-<section class="container">
+<section class="container-fluid">
   <div class="row">
     <div class="d-flex flex-column align-items-center justify-content-center gap-4 gap-lg-5 block-column">
       <h2 class="text-header text-primary-custom text-center fw-bold">
@@ -328,7 +328,7 @@
 </section>
 
 <!--Industry section-->
-<section class="container">
+<section class="container-fluid d-flex justify-content-center align-items-center industry-section">
   <div class="row">
     <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between block-column">
       <div class="w-100 text-column">
@@ -342,7 +342,7 @@
             buyers.
           </p>
         </div>
-        <div class="mt-5 text-center text-lg-start">
+        <div class="d-none d-lg-block mt-5 text-center text-lg-start">
           <button class="btn btn-primary-custom try-button text-nowrap">
             Try It Free
           </button>
@@ -356,6 +356,11 @@
           class="img-fluid w-100 h-100 object-fit-cover"
         />
       </div>
+        <div class="d-lg-none d-block mt-5 text-center text-lg-start try-button-mob">
+          <button class="w-100 btn btn-primary-custom text-nowrap">
+            Try It Free
+          </button>
+        </div>
     </div>
   </div>
 </section>
@@ -386,8 +391,8 @@
         </div>
         <div class="divider"></div>
         <div>
-          <h5 class="text-primary-custom fw-bold mb-1">Prebuilt Templates</h5>
-          <p class="mb-0 text-muted">
+          <h5 class="text-primary-custom fw-bold mb-1 icon-title">Prebuilt Templates</h5>
+          <p class="mb-0 text-muted icon-text">
             Start fast with professionally written cold and warm email templates
             tailored to your audience.
           </p>
@@ -480,7 +485,7 @@
 </section>
 
 <!--Results section-->
-<section class="container block-column">
+<section class="container-fluid block-column">
   <div class="row">
     <div class="text-center">
       <h2 class="text-primary-custom text-header fw-bold">
@@ -493,7 +498,7 @@
       </p>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-lg-flex justify-content-center align-items-center result-slider">
       <div class="testimonial-slider position-relative">
         <div class="testimonial-content d-flex align-items-center">
           <div class="testimonial-nav">
@@ -552,6 +557,264 @@
         ></div>
       </div>
     </div>
+
+    <div class="swiper resultsSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <div class="testimonial-content d-flex align-items-center">
+          <div class="testimonial-nav">
+            <button aria-label="Previous testimonial" id="prev">
+              <img src="assets/icons/arrowup.svg" alt="Previous Arrow" />
+            </button>
+            <button aria-label="Next testimonial" id="next">
+              <img src="assets/icons/arrowdown.svg" alt="Next Arrow" />
+            </button>
+          </div>
+          <div class="testimonials d-flex flex-column">
+            <div class="testimonial left">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial center">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial right">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            class="profile d-flex flex-column align-items-center justify-content-between"
+          >
+            <div class="profile-img">
+              <img
+                src="assets/images/user.png"
+                alt="Profile Image"
+                id="profile-img"
+              />
+            </div>
+            <h4 class="profile-name text-primary-custom">Name Here</h4>
+            <p class="profile-title text-primary-custom">Title Here</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide"> <div class="testimonial-content d-flex align-items-center">
+          <div class="testimonial-nav">
+            <button aria-label="Previous testimonial" id="prev">
+              <img src="assets/icons/arrowup.svg" alt="Previous Arrow" />
+            </button>
+            <button aria-label="Next testimonial" id="next">
+              <img src="assets/icons/arrowdown.svg" alt="Next Arrow" />
+            </button>
+          </div>
+          <div class="testimonials d-flex flex-column">
+            <div class="testimonial left">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial center">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial right">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            class="profile d-flex flex-column align-items-center justify-content-between"
+          >
+            <div class="profile-img">
+              <img
+                src="assets/images/user.png"
+                alt="Profile Image"
+                id="profile-img"
+              />
+            </div>
+            <h4 class="profile-name text-primary-custom">Name Here</h4>
+            <p class="profile-title text-primary-custom">Title Here</p>
+          </div>
+        </div></div>
+      <div class="swiper-slide"> <div class="testimonial-content d-flex align-items-center">
+          <div class="testimonial-nav">
+            <button aria-label="Previous testimonial" id="prev">
+              <img src="assets/icons/arrowup.svg" alt="Previous Arrow" />
+            </button>
+            <button aria-label="Next testimonial" id="next">
+              <img src="assets/icons/arrowdown.svg" alt="Next Arrow" />
+            </button>
+          </div>
+          <div class="testimonials d-flex flex-column">
+            <div class="testimonial left">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial center">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial right">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            class="profile d-flex flex-column align-items-center justify-content-between"
+          >
+            <div class="profile-img">
+              <img
+                src="assets/images/user.png"
+                alt="Profile Image"
+                id="profile-img"
+              />
+            </div>
+            <h4 class="profile-name text-primary-custom">Name Here</h4>
+            <p class="profile-title text-primary-custom">Title Here</p>
+          </div>
+        </div></div>
+      <div class="swiper-slide"> <div class="testimonial-content d-flex align-items-center">
+          <div class="testimonial-nav">
+            <button aria-label="Previous testimonial" id="prev">
+              <img src="assets/icons/arrowup.svg" alt="Previous Arrow" />
+            </button>
+            <button aria-label="Next testimonial" id="next">
+              <img src="assets/icons/arrowdown.svg" alt="Next Arrow" />
+            </button>
+          </div>
+          <div class="testimonials d-flex flex-column">
+            <div class="testimonial left">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial center">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial right">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            class="profile d-flex flex-column align-items-center justify-content-between"
+          >
+            <div class="profile-img">
+              <img
+                src="assets/images/user.png"
+                alt="Profile Image"
+                id="profile-img"
+              />
+            </div>
+            <h4 class="profile-name text-primary-custom">Name Here</h4>
+            <p class="profile-title text-primary-custom">Title Here</p>
+          </div>
+        </div></div>
+      <div class="swiper-slide"> <div class="testimonial-content d-flex align-items-center">
+          <div class="testimonial-nav">
+            <button aria-label="Previous testimonial" id="prev">
+              <img src="assets/icons/arrowup.svg" alt="Previous Arrow" />
+            </button>
+            <button aria-label="Next testimonial" id="next">
+              <img src="assets/icons/arrowdown.svg" alt="Next Arrow" />
+            </button>
+          </div>
+          <div class="testimonials d-flex flex-column">
+            <div class="testimonial left">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial center">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+            <div class="testimonial right">
+              <img
+                src="assets/images/Quotes.png"
+                alt="quotes"
+                class="quote"
+              />
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            class="profile d-flex flex-column align-items-center justify-content-between"
+          >
+            <div class="profile-img">
+              <img
+                src="assets/images/user.png"
+                alt="Profile Image"
+                id="profile-img"
+              />
+            </div>
+            <h4 class="profile-name text-primary-custom">Name Here</h4>
+            <p class="profile-title text-primary-custom">Title Here</p>
+          </div>
+        </div></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
   </div>
 </section>
 
@@ -562,7 +825,7 @@
   </h2>
 
   <div class="row justify-content-center choose-content">
-    <div class="col-md-6 col-lg-4">
+    <div class="col-lg-4 col-md-6 ">
       <div class="feature-card mx-auto px-3">
         <div class="icon-wrapper bg-warning-subtle">
           <img src="assets/icons/book.svg" alt="Icon" width="50" height="50" />
@@ -578,7 +841,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-lg-4">
+    <div class="col-lg-4 col-md-6">
       <div class="feature-card mx-auto px-3">
         <div class="icon-wrapper bg-warning-subtle">
           <img src="assets/icons/puzzle.svg" alt="Icon" width="50" height="50" />
@@ -594,7 +857,7 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-lg-4">
+    <div class="col-lg-4 col-md-6">
       <div class="feature-card mx-auto px-3">
         <div class="icon-wrapper bg-warning-subtle">
           <img src="assets/icons/snowball.svg" alt="Icon" width="50" height="50" />
@@ -657,12 +920,12 @@
       <p class="body-text text-primary-custom mt-3 fw-medium">Buy exactly what you need — starting at just $1 per lead. No subscriptions, no long-term contracts.</p>
     </div>
 
-  <form class="w-100">
+  <form class="w-100 pricing-form">
       <div class="row row-cols-1 row-cols-lg-3 gy-4">
         <div class="col d-flex justify-content-center ">
           <div class="pricing-card rounded-3xl h-100">
             <div class="mb-3">
-              <span class="fw-bold text-primary-custom price">$19</span>
+              <span class="fw-bold text-primary-custom price">$1</span>
               <span class="ms-1 text-gray-purple">/ Leads</span>
             </div>
             <h4 class="fw-semibold text-primary-custom price-card-title">Solar Leads</h4>
@@ -685,36 +948,36 @@
           </div>
         </div>
 
-        <div class="col d-flex justify-content-center">
-          <div class="pricing-card rounded-3xl featured h-100">
+        <div class="col d-flex justify-content-center ">
+          <div class="pricing-card rounded-3xl h-100">
             <div class="mb-3">
-              <span class=" fw-bold text-white price">$29</span>
+              <span class="fw-bold text-primary-custom price">$6</span>
               <span class="ms-1 text-gray-purple">/ Leads</span>
             </div>
-            <h4 class="fw-semibold text-white price-card-title">Real Estate Leads</h4>
-            <p class="text-lavender-gray small mt-2">Active home buyers, sellers, and property investors by zip code.</p>
+            <h4 class="fw-semibold text-primary-custom price-card-title">Healthcare Leads</h4>
+            <p class="text-lavender-gray small mt-2">Filter by specialty, facility type, or care focus</p>
             <ul class="list-unstyled text-lavender-gray small mt-4">
               <li class="d-flex align-items-start mb-2">
-                <svg class="check-icon me-2" fill="#fff" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Behavior-based filters (intent, location)
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                 Behavior-based filters (intent, location)
               </li>
               <li class="d-flex align-items-start mb-2">
-                <svg class="check-icon me-2" fill="#fff" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                Residential & commercial segmentation
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                 Behavior-based filters (intent, location)
               </li>
               <li class="d-flex align-items-start">
-                <svg class="check-icon me-2" fill="#fff" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
                 Ideal for agents, lenders, or closing services
               </li>
             </ul>
-            <button class="btn btn-white-custom w-100 mt-4">Choose Plan</button>
+            <button class="btn  btn-primary-custom w-100 mt-4">Choose Plan</button>
           </div>
         </div>
 
         <div class="col d-flex justify-content-center">
           <div class="pricing-card rounded-3xl h-100">
             <div class="mb-3">
-              <span class="fw-bold text-primary-custom price">$59</span>
+              <span class="fw-bold text-primary-custom price">$5</span>
               <span class="ms-1 text-gray-purple">/ Leads</span>
             </div>
             <h4 class="fw-semibold text-primary-custom price-card-title">Real Estate Leads</h4>
@@ -737,7 +1000,93 @@
           </div>
         </div>
       </div>
-    </form>
+  </form>
+  <div class="swiper pricingSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+           <div class="col d-flex justify-content-center ">
+          <div class="pricing-card rounded-3xl h-100">
+            <div class="mb-3">
+              <span class="fw-bold text-primary-custom price">$1</span>
+              <span class="ms-1 text-gray-purple">/ Leads</span>
+            </div>
+            <h4 class="fw-semibold text-primary-custom price-card-title">Solar Leads</h4>
+            <p class="text-lavender-gray small mt-2">High-intent homeowners ready to install or switch to solar energy</p>
+            <ul class="list-unstyled text-lavender-gray small mt-4">
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Geo-targeted leads for local installers
+              </li>
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Location-based targeting for local installers
+              </li>
+              <li class="d-flex align-items-start">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Region-specific leads for local installers
+              </li>
+            </ul>
+            <button class="btn  btn-primary-custom w-100 mt-4">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">    
+        <div class="col d-flex justify-content-center ">
+          <div class="pricing-card rounded-3xl h-100">
+            <div class="mb-3">
+              <span class="fw-bold text-primary-custom price">$6</span>
+              <span class="ms-1 text-gray-purple">/ Leads</span>
+            </div>
+            <h4 class="fw-semibold text-primary-custom price-card-title">Healthcare Leads</h4>
+            <p class="text-lavender-gray small mt-2">Filter by specialty, facility type, or care focus</p>
+            <ul class="list-unstyled text-lavender-gray small mt-4">
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                 Behavior-based filters (intent, location)
+              </li>
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                 Behavior-based filters (intent, location)
+              </li>
+              <li class="d-flex align-items-start">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Ideal for agents, lenders, or closing services
+              </li>
+            </ul>
+            <button class="btn  btn-primary-custom w-100 mt-4">Choose Plan</button>
+          </div>
+        </div></div>
+      <div class="swiper-slide">
+              <div class="col d-flex justify-content-center">
+          <div class="pricing-card rounded-3xl h-100">
+            <div class="mb-3">
+              <span class="fw-bold text-primary-custom price">$5</span>
+              <span class="ms-1 text-gray-purple">/ Leads</span>
+            </div>
+            <h4 class="fw-semibold text-primary-custom price-card-title">Real Estate Leads</h4>
+            <p class="text-lavender-gray small mt-2">Filter by specialty, facility type, or care focus</p>
+            <ul class="list-unstyled text-lavender-gray small mt-4">
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Behavior-based filters (intent, location)
+              </li>
+              <li class="d-flex align-items-start mb-2">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Residential & commercial segmentation
+              </li>
+              <li class="d-flex align-items-start">
+                <svg class="check-icon me-2" fill="#1f2937" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.25 8.25a1 1 0 01-1.414 0l-4.25-4.25a1 1 0 011.414-1.414l3.543 3.543 7.543-7.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Ideal for agents, lenders, or closing services
+              </li>
+            </ul>
+            <button class="btn  btn-primary-custom w-100 mt-4">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </section>  
 
 <!--Generation section-->
@@ -752,10 +1101,9 @@
           Instantly reach your ideal audience and start converting leads in your industry today.
         </div>
       </div>
-      <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3">
-        <button class="btn btn-primary-custom">Become an Affiliate</button>
-        <button class="w-100 btn btn-white-custom">Purchase Leads</button>
-      </div>
+        <div class="w-100 generation-btn">
+          <button class="w-100 btn btn-primary-custom">Become an Affiliate</button>
+        </div>
     </div>
 
     <div class="col-lg-8 img-container mt-4 mt-lg-0 landing-image">

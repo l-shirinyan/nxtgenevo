@@ -25,7 +25,10 @@
   display: none;
 }
 .swiper-pagination-bullet-active {
-  background: #003968;
+  background: var(--color-primary);
+    width: 42px;
+    height: 8px;
+    border-radius: 26px;
 }
 
 p {
@@ -133,7 +136,10 @@ p {
   padding: 0;
 }
 .pagination-bullets button.active {
-  background: #003366;
+  background: var(--color-primary);
+    width: 42px;
+    height: 8px;
+    border-radius: 26px;
 }
 
 @keyframes bookFlipDown {
@@ -181,7 +187,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .swiper-pagination {
     display: block;
   }

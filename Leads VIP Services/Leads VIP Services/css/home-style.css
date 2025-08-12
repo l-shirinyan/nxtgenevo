@@ -25,6 +25,9 @@
   height: 100%;
   object-fit: contain;
 }
+.btn-white-hero{
+  width: 218px;
+}
 
 @media screen and (max-width: 990px) {
   .desk-btn-groups {
@@ -32,6 +35,15 @@
   }
   .mob-btn-groups {
     display: flex !important;
+  }
+}
+@media screen and (max-width:768px){
+   .mob-btn-groups {
+    width: 100%;
+    display: flex !important;
+  }
+  .mob-btn-groups .btn{
+    width: 100%;
   }
 }
 
@@ -96,11 +108,20 @@
 }
 
 /*Industry section*/
+.industry-section{
+  background-image: url("../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+}
 .text-column{
     max-width: 678px;
 }
 .try-button{
-    padding-inline: 107px; ;
+    width: 312px;
+}
+.try-button-mob{
+  max-width: 353px;
+  width: 100%;
 }
 .industry-img{
     max-width: 578px; 
@@ -162,6 +183,9 @@
 .results-text{
     display: none;
 }
+.resultsSwiper{
+  display: none;
+}
 
 /*Choose section*/
 .choose-title {
@@ -178,6 +202,10 @@
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   max-width: 20rem;
+}
+
+.feature-card-title{
+  margin-bottom: 0px;
 }
 
 .icon-wrapper {
@@ -269,13 +297,17 @@
   color: var(--color-primary);
   background: var(--color-white);
 }
-
+.pricingSwiper{
+    display: none;
+}
 
 /*Generation section*/
 .generation-content {
   max-width: 591px;
 }
-
+.generation-btn{
+  max-width: 353px;
+}
 .landing-image {
   scale: 150%;
   transform-origin: bottom center;
@@ -286,19 +318,38 @@
     scale: 100%;
   }
 }
-
+@media screen and (max-width:1100px){
+  .pricing-form{
+    display: none;
+  }
+  .pricingSwiper{
+    display: block;
+  }
+}
 @media screen and (max-width: 1020px) {
   .results-text {
     display: block;
   }
   .choose-content {
-    gap: 100px;
+    row-gap: 100px;
   }
   .profile-name {
     margin-top: 16px;
   }
+  .resultsSwiper{
+    display: block;
+    margin-top: 45px;
 }
-
+.result-slider{
+  display: none !important;
+}
+}
+@media screen and (max-width:992px){
+  .feature-card {
+    height: 240px;
+    padding: 3rem;
+}
+}
 @media screen and (max-width: 768px) {
   .team-img {
     padding-left: 0px !important;
@@ -311,9 +362,24 @@
     height: 24px;
   }
   .info-card h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .info-card p {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .icon-wrapper{
+    width: 61px;
+    height: 61px;
+  }
+  .icon-wrapper img{
+    width: 39px !important;
+    height: 39px !important;
+  }
+  .feature-card {
+    height: 182px;
+  }
+  .feature-card-body{
+    gap:16px;
+    margin-top: 14px;
   }
 }

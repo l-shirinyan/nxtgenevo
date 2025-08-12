@@ -1,48 +1,119 @@
-    var swiper = new Swiper(".sellSwiper", {
+var swiper = new Swiper(".sellSwiper", {
+   slidesPerView: 1.2, 
+  spaceBetween: 20,
+  freeMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 1.7,
+    },
+    768: { 
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1020: {
       slidesPerView: 3,
-      spaceBetween: 0,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1200: { 
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 24
+    }
+  }
+});
+
+ var swiper = new Swiper(".toolsSwiper", {
+  slidesPerView: 1.2, 
+  spaceBetween: 20,
+  freeMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 1.4,
+    },
+    768: { 
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1020: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1200: { 
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 24
+    }
+  }
+});
+    var swiper = new Swiper(".pricingSwiper", {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+      freeMode: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-       breakpoints: {
-    0: {
-      slidesPerView: 1,
+        breakpoints: {
+    400: {
+      slidesPerView: 1.4,
     },
-    769: {
+    768: { 
       slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 16
     },
-    1021: {
+    1200: {
       slidesPerView: 3,
-    }
+      centeredSlides: false,
+      spaceBetween: 24
+    },
   }
     });
 
-    var swiper = new Swiper(".toolsSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
+  var swiper = new Swiper(".resultsSwiper", {
+       slidesPerView: 1.2,
+      spaceBetween: 30,
       freeMode: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-       breakpoints: {
-    0: {
-      slidesPerView: 1,
+        breakpoints: {
+    400: {
+      slidesPerView: 1.4,
     },
-    769: {
+    768: { 
       slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 16
     },
-    1021: {
+    1200: {
       slidesPerView: 3,
-    }
+      centeredSlides: false,
+      spaceBetween: 24
+    },
   }
     });
-  
 const testimonials = [
     { text: "VIP Leads helped us land our biggest contract yet. It’s like having a full-time researcher on our team. Thank You!", img: "assets/images/user.png", name: "Jane Doe", title: "Marketing Specialist", quoteColor: "#a9b9cb" },
     { text: "VIP Leads helped us land our biggest contract yet. It’s like having a full-time researcher on our team. Thank You!", img: "assets/images/user.png", name: "Byron Rolfson", title: "Regional Solutions Architect", quoteColor: "#003366" },
@@ -88,37 +159,73 @@ const testimonials = [
     bullets.forEach((bullet, i) => bullet.classList.toggle("active", i === index));
   }
 
-  function updateSlider(index, direction = 'next') {
-    const leftIndex = getIndex(index - 1);
-    const rightIndex = getIndex(index + 1);
+function updateSlider(index, direction = 'next') {
+  const leftIndex = getIndex(index - 1);
+  const rightIndex = getIndex(index + 1);
 
-    if (window.innerWidth >= 1020) {
-      centerTestimonialText.parentElement.style.animation =
-        direction === 'next'
-          ? 'bookFlipDown 0.6s ease forwards'
-          : 'bookFlipUp 0.6s ease forwards';
-    } else {
-      centerTestimonialText.parentElement.style.animation =
-        'mobileSlideFade 0.4s ease forwards';
-    }
-
-    leftTestimonialText.textContent = testimonials[leftIndex].text;
-    leftQuoteIcon.style.color = testimonials[leftIndex].quoteColor;
-    centerTestimonialText.textContent = testimonials[index].text;
-    centerQuoteIcon.style.color = testimonials[index].quoteColor;
-    rightTestimonialText.textContent = testimonials[rightIndex].text;
-    rightQuoteIcon.style.color = testimonials[rightIndex].quoteColor;
-
-    profileImg.src = testimonials[index].img;
-    profileName.textContent = testimonials[index].name;
-    profileTitle.textContent = testimonials[index].title;
-
-    updateBullets(index);
-
-    setTimeout(() => {
-      centerTestimonialText.parentElement.style.animation = '';
-    }, window.innerWidth >= 1020 ? 600 : 400);
+  if (window.innerWidth > 992) {
+    centerTestimonialText.parentElement.style.animation =
+      direction === 'next'
+        ? 'bookFlipDown 0.6s ease forwards'
+        : 'bookFlipUp 0.6s ease forwards';
+  } else {
+    centerTestimonialText.parentElement.style.animation =
+      'mobileSlideFade 0.4s ease forwards';
   }
+
+  // Десктопные тексты и цвета
+  leftTestimonialText.textContent = testimonials[leftIndex].text;
+  leftQuoteIcon.style.color = testimonials[leftIndex].quoteColor;
+  centerTestimonialText.textContent = testimonials[index].text;
+  centerQuoteIcon.style.color = testimonials[index].quoteColor;
+  rightTestimonialText.textContent = testimonials[rightIndex].text;
+  rightQuoteIcon.style.color = testimonials[rightIndex].quoteColor;
+
+  profileImg.src = testimonials[index].img;
+  profileName.textContent = testimonials[index].name;
+  profileTitle.textContent = testimonials[index].title;
+
+  updateBullets(index);
+
+  // Обновление мобильных swiper-слайдов
+  const mobileSlides = document.querySelectorAll('.resultsSwiper .swiper-slide');
+  mobileSlides.forEach((slide, i) => {
+    const tIndex = getIndex(index + i);
+    const t = testimonials[tIndex];
+
+    const leftI = getIndex(tIndex - 1);
+    const rightI = getIndex(tIndex + 1);
+
+    const leftP = slide.querySelector('.testimonial.left p');
+    const leftQuote = slide.querySelector('.testimonial.left .quote');
+    const centerP = slide.querySelector('.testimonial.center p');
+    const centerQuote = slide.querySelector('.testimonial.center .quote');
+    const rightP = slide.querySelector('.testimonial.right p');
+    const rightQuote = slide.querySelector('.testimonial.right .quote');
+
+    leftP.textContent = testimonials[leftI].text;
+    leftQuote.style.color = testimonials[leftI].quoteColor;
+
+    centerP.textContent = testimonials[tIndex].text;
+    centerQuote.style.color = testimonials[tIndex].quoteColor;
+
+    rightP.textContent = testimonials[rightI].text;
+    rightQuote.style.color = testimonials[rightI].quoteColor;
+
+    const profileImgMobile = slide.querySelector('.profile-img img');
+    const profileNameMobile = slide.querySelector('.profile-name');
+    const profileTitleMobile = slide.querySelector('.profile-title');
+
+    profileImgMobile.src = t.img;
+    profileNameMobile.textContent = t.name;
+    profileTitleMobile.textContent = t.title;
+  });
+
+  setTimeout(() => {
+    centerTestimonialText.parentElement.style.animation = '';
+  }, window.innerWidth > 992 ? 600 : 400);
+}
+
 
   prevBtn.addEventListener("click", () => {
     currentIndex = getIndex(currentIndex - 1);
@@ -162,3 +269,43 @@ const testimonials = [
     startX = 0;
     endX = 0;
   });
+
+
+
+
+
+
+const mobileSlides = document.querySelectorAll('.resultsSwiper .swiper-slide');
+
+function updateMobileSlides() {
+  mobileSlides.forEach((slide, i) => {
+    const t = testimonials[(currentIndex + i) % testimonials.length];
+    const leftP = slide.querySelector('.testimonial.left p');
+    const leftQuote = slide.querySelector('.testimonial.left .quote');
+    const centerP = slide.querySelector('.testimonial.center p');
+    const centerQuote = slide.querySelector('.testimonial.center .quote');
+    const rightP = slide.querySelector('.testimonial.right p');
+    const rightQuote = slide.querySelector('.testimonial.right .quote');
+
+    const leftIndex = (currentIndex + i - 1 + testimonials.length) % testimonials.length;
+    const centerIndex = (currentIndex + i) % testimonials.length;
+    const rightIndex = (currentIndex + i + 1) % testimonials.length;
+
+    leftP.textContent = testimonials[leftIndex].text;
+    leftQuote.style.color = testimonials[leftIndex].quoteColor;
+
+    centerP.textContent = testimonials[centerIndex].text;
+    centerQuote.style.color = testimonials[centerIndex].quoteColor;
+
+    rightP.textContent = testimonials[rightIndex].text;
+    rightQuote.style.color = testimonials[rightIndex].quoteColor;
+
+    const profileImg = slide.querySelector('.profile-img img');
+    const profileName = slide.querySelector('.profile-name');
+    const profileTitle = slide.querySelector('.profile-title');
+
+    profileImg.src = t.img;
+    profileName.textContent = t.name;
+    profileTitle.textContent = t.title;
+  });
+}
