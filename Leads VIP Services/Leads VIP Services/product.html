@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP Leads Services</title>
+
+<!-- Bootstrap CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/home-style.css">
+<link rel="stylesheet" href="css/product-style.css">
+<!-- <link rel="stylesheet" href="css/tools-slide-style.css"> -->
+</head>
+<body>
+
+<!-- Header -->
+ <header>
+<nav class="bg-white">
+  <div class="container-fluid py-4 px-4 px-lg-5 shadow-sm bg-white sticky-top">
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a href="index.html" class="d-flex align-items-center">
+        <img src="assets//icons/logo.svg" alt="Company Logo" width="53" height="30">
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 2.5a.5.5 0 0 1 .5-.5H14.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5H14.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5H14.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+
+      <!-- Desktop Nav -->
+      <ul class="d-none d-lg-flex list-unstyled gap-4 mb-0 align-items-center">
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Shop
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Solutions
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Resources
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">About Us
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Contact Us
+            <span class="link-underline"></span>
+        </a></li>
+      </ul>
+
+      <!-- Desktop Login Button -->
+      <a href="#" class="btn btn-login text-white d-none d-lg-block">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Sidebar (Bootstrap Offcanvas) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel" >
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileSidebarLabel">
+      <a href="index.html">
+        <img src="assets//icons/logo.svg" alt="Company Logo" width="53" height="30">
+      </a>
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <ul class="list-unstyled d-flex flex-column gap-5">
+           <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Shop
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Solutions
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Resources
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">About Us
+            <span class="link-underline"></span>
+        </a></li>
+        <li><a href="#" class="nav-link-hover text-decoration-none fw-medium position-relative">Contact Us
+            <span class="link-underline"></span>
+        </a></li>
+    </ul>
+    <a href="#" class="btn btn-login text-white d-block mt-auto">Login</a>
+  </div>
+</div>
+</header>
+
+<main>
+  <!-- Hero section-->
+   <section class="container-fluid hero py-5 px-3 block-column">
+      <div class="row justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
+        <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+          <div class="w-100" style="max-width: 591px">
+            <h2 class="text-header text-primary-custom fw-bold text-center text-lg-start mb-3">
+              Everything You Need to Find, Nurture & Close More Leads
+            </h2>
+            <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
+              YMT automates prospecting, enriches contacts, scores leads, and syncs it all into your CRM — so your team focuses on closing, not chasing.
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3 desk-btn-groups">
+            <button class="btn btn-primary-custom">Become an Affiliate</button>
+            <button class="w-100 btn btn-white-custom">Purchase Leads</button>
+          </div>
+        </div>
+        <div class="col-lg-8 img-container mt-4 mt-lg-0 team-img">
+          <img src="assets/images/IPhone.png" alt="Team Image"  />
+        </div>
+          <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3 mob-btn-groups">
+            <button class="btn btn-primary-custom">Become an Affiliate</button>
+            <button class="btn btn-white-custom">Purchase Leads</button>
+          </div>
+      </div>
+    </section> 
+
+<!--Choose section-->
+<section class="container py-5 px-4 px-lg-5 text-center block-column">
+    <div class="d-flex flex-column align-items-center choose-title gap-4">
+      <h2 class="text-primary-custom text-header fw-bold">
+        Why Teams Choose YMT
+      </h2>
+      <p class="w-100 body-text text-primary-custom fw-medium mx-auto">Whether you sell, scale, or recruit — YMT helps you reach the people who matter.</p>
+    </div>
+
+  <div class="row justify-content-center choose-content">
+    <div class="col-md-6 col-lg-4">
+      <div class="feature-card mx-auto px-3">
+        <div class="icon-wrapper bg-warning-subtle">
+          <img src="assets/icons/book.svg" alt="Icon" width="50" height="50" />
+        </div>
+        <div class="feature-card-body d-flex flex-column align-items-center">
+          <h5 class="feature-card-title text-primary-custom fw-bold">
+            Sales Teams
+          </h5>
+          <p class="feature-card-text fw-semibold">
+            Close more deals by focusing only on qualified, sales-ready leads.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="feature-card mx-auto px-3">
+        <div class="icon-wrapper bg-warning-subtle">
+          <img src="assets/icons/puzzle.svg" alt="Icon" width="50" height="50" />
+        </div>
+        <div class="feature-card-body d-flex flex-column align-items-center">
+          <h5 class="feature-card-title text-primary-custom fw-bold">
+            Agencies & Consultants
+          </h5>
+          <p class="feature-card-text fw-semibold">
+            Get pre-qualified leads delivered for every campaign — no scraping, no guessing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="feature-card mx-auto px-3">
+        <div class="icon-wrapper bg-warning-subtle">
+          <img src="assets/icons/snowball.svg" alt="Icon" width="50" height="50" />
+        </div>
+        <div class="feature-card-body d-flex flex-column align-items-center">
+          <h5 class="feature-card-title text-primary-custom fw-bold">
+            Healthcare & Recruiting
+          </h5>
+          <p class="feature-card-text fw-semibold">
+            Find NPI-verified providers or top talent, filtered by specialty and location.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--Industries section-->
+<section class="container px-4 px-lg-5 text-center block-column">
+<div class="d-flex flex-column align-items-center industries-content gap-4 mb-5">
+    <h2 class="text-primary-custom text-header fw-bold">Industries We Serve</h2>
+    <p class="w-100 body-text fw-bold text-primary-custom">From solar to healthcare to legal — we offer targeted leads across 12+ verticals. Pick what fits your business and start closing.</p>
+</div>
+ <!-- Swiper -->
+  <div class="swiper industriesSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+         <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+            <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+            <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+            <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+            <div class="swiper-slide">
+        <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
+            <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
+            <div class="d-flex flex-column align-items-start gap-4">
+                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
+            </div>
+        </div> 
+      </div>
+    </div>
+    <div class="swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+
+    </div>
+    <div class="swiper-button-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>
+    </div>
+        <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!--Lead section-->
+<section class="container-fluid hero pt-5 px-3 block-column lead-container">
+  <div class="row d-flex justify-content-around align-items-center flex-column-reverse flex-lg-row gap-4 gap-lg-0">
+    <div class="col-lg-8 img-container mt-4 mt-lg-0 landing-image">
+      <img src="assets/images/IPhone.png" alt="Team Image" />
+    </div>
+
+    <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+      <div class="w-100 generation-content">
+        <div class="text-header text-primary-custom text-center fw-bold text-lg-start mb-3">
+          Every Lead Is Verified and Scored
+        </div>
+        <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
+          From contact verification to intent scoring, we ensure every lead is worth your time.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FAQ section-->
+<section class="container block-column">
+  <div class="row">
+    <div class="d-flex flex-column align-items-center faq-content gap-4 mb-5">
+      <h2 class="text-primary-custom text-header fw-bold text-center">
+        Explore Our Lead Product Catalog
+      </h2>
+      <p class="body-text fw-bold text-primary-custom text-center">
+        AI, verified, or custom leads — all vetted and transparently priced.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            AI-Generated Lead Sets
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext">
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Phone Verified Leads
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext">
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Industry-Specific Lead Packs
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext">
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Lead Exclusivity Upgrade
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext" >
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Custom Lead Campaign Deployment
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext" >
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSixth">
+          <button
+            class="accordion-button collapsed accordion-title text-primary-custom fw-semibold text-subheader"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSixth"
+            aria-expanded="false"
+            aria-controls="flush-collapseSixth"
+          >
+            CRM / API Integration Support
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSixth"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSixth"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body d-flex justify-content-between align-items-center">
+            <p class="w-100 body-subtext">
+              Leads generated using AI models trained on ideal customer criteria,
+              tailored by vertical and intent.
+            </p>
+            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Testimonials section-->
+<section class="container block-column">
+  <div class="row">
+    <div class="d-flex flex-row align-items-start justify-content-center mb-5" >
+      <div class="w-100 h-100 testimonial-title">
+        <img src="assets/icons/quote.svg" alt="Quote" class="img-fluid" />
+      </div>
+      <h2 class="text-primary-custom text-header fw-bold text-center">
+        Hear from Teams Like Yours, See how we’ve made an impact.
+      </h2>
+    </div>
+    <div class="swiper testimonialsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="bg-white shadow-sm rounded-3 p-3 d-flex flex-column align-items-start testimonials-content">
+            <p class="text-primary-custom testimonial-slider-text fw-medium">
+              I’ve tried 5+ lead platforms. This is the only one that gave us usable
+              data and real conversion.
+            </p>
+            <div class="d-flex flex-row align-items-start gap-4">
+              <img src="assets/images/user-img.png" alt="User Image" />
+              <div class="d-flex flex-column align-items-start gap-1">
+                <p class="testimonial-slider-author text-primary-custom fw-semibold">
+                  Avery Smith
+                </p>
+                <p class="testimonial-slider-nickname text-secondary">
+                  @jaded_butterfly1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+<!--Tools section-->
+  <section class="container block-column">
+  <div class="row">
+    <h2  class="tools-title text-header text-primary-custom text-center display-5 fw-bold mx-auto mb-5">
+      Works with the Tools You Already Use
+    </h2>
+    <div class="swiper toolsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/tools1.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools2.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools3.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools4.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools1.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools2.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools3.png" alt="Tools Icon" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/tools4.png" alt="Tools Icon" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!--Generation section-->
+<section class="container-fluid hero pt-5 px-3 block-column lead-container">
+  <div class="row d-flex justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
+    <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+      <div class="w-100 generation-content">
+        <div class="text-header text-primary-custom text-center fw-bold text-lg-start mb-3">
+           See It in Action
+        </div>
+        <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
+          From filtering to outreach — here's how your team will use YMT, step by step.
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3">
+        <button class="btn btn-primary-custom">Become an Affiliate</button>
+        <button class="w-100 btn btn-white-custom">Purchase Leads</button>
+      </div>
+    </div>
+
+    <div class="col-lg-8 img-container mt-4 mt-lg-0 landing-image">
+      <img src="assets/images/laptop.png" alt="Team Image" />
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-footer-dark text-white py-5">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+      <div class="col-lg-2 text-center text-lg-start">
+        <a href="index.html">
+          <img
+            src="assets/icons/logo.svg"
+            alt="Company Logo"
+            class="img-fluid footer-img"
+          />
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-between justify-content-lg-start gap-5">
+        <div>
+          <h5 class="fw-semibold custom-font-size">AI Leads</h5>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >Clothing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >Real Estate</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="fw-semibold custom-font-size">Customer Services</h5>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >Fulfillment Policies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-link text-secondary text-decoration-none d-block py-1 small"
+                >KYC Policies</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="fw-semibold custom-font-size">Contact Us</h5>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="footer-contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#9398A6"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 
+                  8.05c0 4.017 2.926 7.347 6.75 
+                  7.951v-5.625h-2.03V8.05H6.75V6.275
+                  c0-2.017 1.195-3.131 
+                  3.022-3.131.876 0 1.791.157 
+                  1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 
+                  1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 
+                  6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#9398A6"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 
+                  1.175 0h13.65C15.474 0 16 
+                  .513 16 1.146v13.708c0 .633-.526 
+                  1.146-1.175 1.146H1.175C.526 16 0 
+                  15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 
+                  0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 
+                  3.226 2.4 3.934c0 .694.521 1.248 
+                  1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 
+                  1.232-.878.869 0 1.216.662 
+                  1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+                  0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 
+                  0 7.225 0 7.225z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <h5 class="fw-semibold custom-font-size">
+          Sign Up For Our Newsletter
+        </h5>
+        <p class="text-secondary small mt-3">
+          Get the latest deals and savings sent to your inbox weekly.
+        </p>
+        <form class="d-flex mt-4 gap-2 footer-form-control">
+          <input
+            type="email"
+            class="form-control bg-light-gray text-primary-custom border-0"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn default-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="mt-5 pt-4 border-top border-secondary text-center text-lg-end"
+    >
+      <p class="mb-0 small text-secondary fw-semibold">
+        &copy; 2022 - <span id="year"></span> Leads. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/product-slider.js"></script>
+</body>
+</html>
