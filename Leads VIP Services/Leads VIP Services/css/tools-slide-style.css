@@ -25,7 +25,10 @@
   display: none;
 }
 .swiper-pagination-bullet-active {
-  background: #003968;
+  background: var(--color-primary);
+    width: 42px;
+    height: 8px;
+    border-radius: 26px;
 }
 
 p {

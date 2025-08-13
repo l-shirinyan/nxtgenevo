@@ -12,14 +12,12 @@
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/home-style.css">
+<!-- <link rel="stylesheet" href="css/home-style.css"> -->
 <link rel="stylesheet" href="css/product-style.css">
 <!-- <link rel="stylesheet" href="css/tools-slide-style.css"> -->
 </head>
 <body>
-
-<!-- Header -->
- <header>
+<header>
 <nav class="bg-white">
   <div class="container-fluid py-4 px-4 px-lg-5 shadow-sm bg-white sticky-top">
     <div class="d-flex justify-content-between align-items-center">
@@ -92,18 +90,17 @@
   </div>
 </div>
 </header>
-
 <main>
   <!-- Hero section-->
-   <section class="container-fluid hero py-5 px-3 block-column">
+      <section class="container-fluid product-hero d-flex justify-content-center align-items-center py-5 px-3 block-column">
       <div class="row justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
-        <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
-          <div class="w-100" style="max-width: 591px">
-            <h2 class="text-header text-primary-custom fw-bold text-center text-lg-start mb-3">
-              Everything You Need to Find, Nurture & Close More Leads
+        <div class="col-lg-7 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+          <div class="w-100 d-flex flex-column gap-3 product-text">
+            <h2 class="text-header text-primary-custom fw-bold text-center text-lg-start">
+               Everything You Need to Find, Nurture & Close More Leads
             </h2>
             <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
-              YMT automates prospecting, enriches contacts, scores leads, and syncs it all into your CRM — so your team focuses on closing, not chasing.
+             YMT automates prospecting, enriches contacts, scores leads, and syncs it all into your CRM — so your team focuses on closing, not chasing.
             </div>
           </div>
           <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3 desk-btn-groups">
@@ -111,92 +108,90 @@
             <button class="w-100 btn btn-white-custom">Purchase Leads</button>
           </div>
         </div>
-        <div class="col-lg-8 img-container mt-4 mt-lg-0 team-img">
-          <img src="assets/images/IPhone.png" alt="Team Image"  />
+        <div class="col-lg-5 mt-4 mt-lg-0 d-flex justify-content-center team-img">
+          <img src="assets/images/IPhone.png" alt="Team Image" class="img-fluid" />
         </div>
-          <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3 mob-btn-groups">
-            <button class="btn btn-primary-custom">Become an Affiliate</button>
-            <button class="btn btn-white-custom">Purchase Leads</button>
-          </div>
+        <div
+          class="col-lg-6 d-flex flex-row align-items-center justify-content-center gap-3 flex-wrap mt-3 mob-btn-groups">
+          <button class="btn btn-primary-custom">Become an Affiliate</button>
+          <button class="btn btn-white-custom btn-white-hero">Purchase Leads</button>
+        </div>
       </div>
-    </section> 
+    </section>
 
-<!--Choose section-->
-<section class="container py-5 px-4 px-lg-5 text-center block-column">
-    <div class="d-flex flex-column align-items-center choose-title gap-4">
+        <!--Choose section-->
+    <section class="container py-5 px-4 px-lg-5 text-center block-column">
+       <div class="d-flex flex-column align-items-center choose-title gap-4">
       <h2 class="text-primary-custom text-header fw-bold">
         Why Teams Choose YMT
       </h2>
       <p class="w-100 body-text text-primary-custom fw-medium mx-auto">Whether you sell, scale, or recruit — YMT helps you reach the people who matter.</p>
     </div>
 
-  <div class="row justify-content-center choose-content">
-    <div class="col-md-6 col-lg-4">
-      <div class="feature-card mx-auto px-3">
-        <div class="icon-wrapper bg-warning-subtle">
-          <img src="assets/icons/book.svg" alt="Icon" width="50" height="50" />
+      <div class="row justify-content-center choose-content">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="w-100 feature-card px-3">
+            <div class="icon-wrapper bg-warning-subtle">
+              <img src="assets/icons/book.svg" alt="Icon" width="50" height="50" />
+            </div>
+            <div class="feature-card-body d-flex flex-column align-items-center">
+              <h5 class="feature-card-title text-primary-custom fw-bold">
+                Sales Teams
+              </h5>
+              <p class="feature-card-text fw-semibold">
+                Close more deals by focusing only on qualified, sales-ready leads.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature-card-body d-flex flex-column align-items-center">
-          <h5 class="feature-card-title text-primary-custom fw-bold">
-            Sales Teams
-          </h5>
-          <p class="feature-card-text fw-semibold">
-            Close more deals by focusing only on qualified, sales-ready leads.
-          </p>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="w-100 feature-card px-3">
+            <div class="icon-wrapper bg-warning-subtle">
+              <img src="assets/icons/puzzle.svg" alt="Icon" width="50" height="50" />
+            </div>
+            <div class="feature-card-body d-flex flex-column align-items-center">
+              <h5 class="feature-card-title text-primary-custom fw-bold">
+                Agencies & Consultants
+              </h5>
+              <p class="feature-card-text fw-semibold">
+                Get pre-qualified leads delivered for every campaign — no scraping, no guessing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="w-100 feature-card px-3">
+            <div class="icon-wrapper bg-warning-subtle">
+              <img src="assets/icons/snowball.svg" alt="Icon" width="50" height="50" />
+            </div>
+            <div class="feature-card-body d-flex flex-column align-items-center">
+              <h5 class="feature-card-title text-primary-custom fw-bold">
+                Healthcare & Recruiting
+              </h5>
+              <p class="feature-card-text fw-semibold">
+                Find NPI-verified providers or top talent, filtered by specialty and location.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="feature-card mx-auto px-3">
-        <div class="icon-wrapper bg-warning-subtle">
-          <img src="assets/icons/puzzle.svg" alt="Icon" width="50" height="50" />
-        </div>
-        <div class="feature-card-body d-flex flex-column align-items-center">
-          <h5 class="feature-card-title text-primary-custom fw-bold">
-            Agencies & Consultants
-          </h5>
-          <p class="feature-card-text fw-semibold">
-            Get pre-qualified leads delivered for every campaign — no scraping, no guessing.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="feature-card mx-auto px-3">
-        <div class="icon-wrapper bg-warning-subtle">
-          <img src="assets/icons/snowball.svg" alt="Icon" width="50" height="50" />
-        </div>
-        <div class="feature-card-body d-flex flex-column align-items-center">
-          <h5 class="feature-card-title text-primary-custom fw-bold">
-            Healthcare & Recruiting
-          </h5>
-          <p class="feature-card-text fw-semibold">
-            Find NPI-verified providers or top talent, filtered by specialty and location.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+    </section>
 <!--Industries section-->
-<section class="container px-4 px-lg-5 text-center block-column">
+ <section class="container-fluid px-4 px-lg-5 text-center block-column industries-container">
 <div class="d-flex flex-column align-items-center industries-content gap-4 mb-5">
     <h2 class="text-primary-custom text-header fw-bold">Industries We Serve</h2>
     <p class="w-100 body-text fw-bold text-primary-custom">From solar to healthcare to legal — we offer targeted leads across 12+ verticals. Pick what fits your business and start closing.</p>
 </div>
- <!-- Swiper -->
+
   <div class="swiper industriesSwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -205,7 +200,7 @@
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -214,7 +209,7 @@
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -223,7 +218,7 @@
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -232,7 +227,7 @@
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -241,7 +236,7 @@
         <div class="d-flex flex-column rounded-3 bg-white shadow-sm p-3 gap-4">
             <img src="assets/images/industries.png" alt="Image" class="img-fluid rounded-3"/>
             <div class="d-flex flex-column align-items-start gap-4">
-                <h2 class="text-primary-custom fw-bold">Solar Leads</h2>
+                <h2 class="text-primary-custom fw-bold industtries-title">Solar Leads</h2>
                 <p class="industries-text fw-normal text-start">Reach homeowners and businesses actively seeking solar solutions. These leads are geo-targeted and ideal for installers, consultants, or green energy marketers looking to close fast.</p>
             </div>
         </div> 
@@ -260,7 +255,7 @@
     </div>
         <div class="swiper-pagination"></div>
   </div>
-</section>
+</section> 
 
 <!--Lead section-->
 <section class="container-fluid hero pt-5 px-3 block-column lead-container">
@@ -316,12 +311,12 @@
           aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
+          <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
             <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -345,12 +340,12 @@
           aria-labelledby="flush-headingTwo"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
+      <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
             <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -374,12 +369,12 @@
           aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
+   <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
             <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -403,12 +398,12 @@
           aria-labelledby="flush-headingFour"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
-            <p class="w-100 body-subtext" >
+   <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
+            <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -432,12 +427,12 @@
           aria-labelledby="flush-headingFive"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
-            <p class="w-100 body-subtext" >
+        <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
+            <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -461,12 +456,12 @@
           aria-labelledby="flush-headingSixth"
           data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body d-flex justify-content-between align-items-center">
+       <div class="accordion-body d-flex flex-column align-items-start gap-4 gap-lg-0 flex-lg-row justify-content-between align-items-lg-center">
             <p class="w-100 body-subtext">
               Leads generated using AI models trained on ideal customer criteria,
               tailored by vertical and intent.
             </p>
-            <p class="text-primary-custom fw-bold body-subtext">$1.00 – $9.00</p>
+            <p class="text-primary-custom fw-bold text-nowrap accordion-price align-self-end align-self-lg-start">$1.00 – $9.00</p>
           </div>
         </div>
       </div>
@@ -475,7 +470,7 @@
 </section>
 
 <!--Testimonials section-->
-<section class="container block-column">
+ <section class="container-fluid block-column testimonials-container">
   <div class="row">
     <div class="d-flex flex-row align-items-start justify-content-center mb-5" >
       <div class="w-100 h-100 testimonial-title">
@@ -494,7 +489,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img" />
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -514,7 +509,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img"/>
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -533,7 +528,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img"/>
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -552,7 +547,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img"/>
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -571,7 +566,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img"/>
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -590,7 +585,7 @@
               data and real conversion.
             </p>
             <div class="d-flex flex-row align-items-start gap-4">
-              <img src="assets/images/user-img.png" alt="User Image" />
+              <img src="assets/images/user-img.png" alt="User Image" class="testimonials-img"/>
               <div class="d-flex flex-column align-items-start gap-1">
                 <p class="testimonial-slider-author text-primary-custom fw-semibold">
                   Avery Smith
@@ -606,70 +601,71 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
-</section>
+</section> 
 
 
-<!--Tools section-->
-  <section class="container block-column">
-  <div class="row">
-    <h2  class="tools-title text-header text-primary-custom text-center display-5 fw-bold mx-auto mb-5">
-      Works with the Tools You Already Use
-    </h2>
-    <div class="swiper toolsSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="assets/images/tools1.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools2.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools3.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools4.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools1.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools2.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools3.png" alt="Tools Icon" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/tools4.png" alt="Tools Icon" />
+   <!--Tools section-->
+    <section class="container-fluid block-column">
+      <div class="row d-flex flex-column gap-5">
+        <h2 class="tools-title text-header text-primary-custom text-center display-5 fw-bold mx-auto">
+          Compatible with Your Tools
+        </h2>
+        <div class="swiper toolsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/tools1.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools2.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools3.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools4.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools1.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools2.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools3.png" alt="Tools Icon" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/tools4.png" alt="Tools Icon" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
+    </section>
+        
 
-<!--Generation section-->
-<section class="container-fluid hero pt-5 px-3 block-column lead-container">
-  <div class="row d-flex justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
-    <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
-      <div class="w-100 generation-content">
-        <div class="text-header text-primary-custom text-center fw-bold text-lg-start mb-3">
-           See It in Action
+        <!--Generation section-->
+    <section class="container-fluid hero pt-5 px-3 block-column generation-container">
+      <div class="row d-flex justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0">
+        <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4 gap-lg-5">
+          <div class="w-100 generation-content">
+            <div class="text-header text-primary-custom text-center fw-bold text-lg-start mb-3">
+               See It in Action
+            </div>
+            <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
+               From filtering to outreach — here's how your team will use YMT, step by step.
+            </div>
+          </div>
+          <div class="w-100 generation-btn">
+            <button class="w-100 btn btn-primary-custom">Become an Affiliate</button>
+          </div>
         </div>
-        <div class="body-text text-primary-custom fw-medium text-center text-lg-start">
-          From filtering to outreach — here's how your team will use YMT, step by step.
+
+        <div class="col-lg-8 img-container mt-4 mt-lg-0 landing-image">
+          <img src="assets/images/laptop.png" alt="Team Image" />
         </div>
       </div>
-      <div class="d-flex flex-column align-items-center flex-lg-row gap-3 mt-3">
-        <button class="btn btn-primary-custom">Become an Affiliate</button>
-        <button class="w-100 btn btn-white-custom">Purchase Leads</button>
-      </div>
-    </div>
+    </section>
 
-    <div class="col-lg-8 img-container mt-4 mt-lg-0 landing-image">
-      <img src="assets/images/laptop.png" alt="Team Image" />
-    </div>
-  </div>
-</section>
 </main>
 
 <footer class="bg-footer-dark text-white py-5">
@@ -821,9 +817,11 @@
     </div>
   </div>
 </footer>
-
 <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/product-slider.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="js/nav-footer.js"></script>
 </body>
 </html>

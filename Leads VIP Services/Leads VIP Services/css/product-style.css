@@ -4,14 +4,93 @@
   --color-primary: #003968;
 }
 
-/* Hero Section */
+/* ===========================
+   HERO SECTION
+   =========================== */
 .product-hero {
-  background-image: url('../assets/images/product-hero-bg.png');
+  background-image: url("../assets/images/product-hero-bg.png");
   background-size: cover;
   background-position: center;
 }
+.product-text{
+  max-width: 951px;
+}
+.mob-btn-groups {
+  display: none !important;
+}
 
-/* Industries section */
+.mob-btn-groups .btn-white-custom {
+  width: 218px;
+}
+
+.img-container {
+  max-width: 664px;
+  max-height: 564px;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn-white-hero {
+  width: 218px;
+}
+
+/* CHOOSE SECTION */
+.choose-title {
+  margin-bottom: 100px;
+}
+
+.choose-title p {
+  max-width: 620px;
+}
+
+.feature-card {
+  max-width: fit-content !important;
+  height: 266px;
+  position: relative;
+  padding-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  max-width: 20rem;
+}
+
+.feature-card-title {
+  margin-bottom: 0;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 103px;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.feature-card-body {
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.feature-card-text {
+  color: var(--color-secondary);
+}
+
+/* INDUSTRIES SECTION */
+.industries-container{
+  background-image: url("../assets/images/industry-bg.png");
+  background-size: cover;
+  background-position: left;
+}
 .industries-text {
   font-size: 20px;
   color: #202020;
@@ -39,12 +118,12 @@
 }
 
 .industriesSwiper .swiper-wrapper {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  content: '';
+  content: "";
 }
 
 .swiper-button-next svg,
@@ -54,16 +133,18 @@
   color: #202020;
 }
 
-.swiper-pagination {
-  display: none;
-}
+
 
 .swiper-pagination-bullet-active {
-  background: var(--color-primary) !important;
+  background: var(--color-primary);
+  width: 42px;
+  height: 8px;
+  border-radius: 26px;
 }
 
-/* Lead section */
+/* LEAD SECTION */
 .lead-container {
+  background-image: url(../assets/images/);
   margin-top: 200px;
 }
 
@@ -80,6 +161,10 @@
   font-size: 32px;
 }
 
+.accordion-price{
+    font-size: 24px;
+}
+
 .accordion-button:focus {
   box-shadow: none !important;
 }
@@ -93,19 +178,18 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.accordion-body p{
+
+.accordion-body p {
   max-width: 664px;
 }
 
-/* Tools section */
-.swiper-slide {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* TOOLS SECTION */
+.tools-title {
+  width: 100%;
+  max-width: 783px;
 }
 
-/* Testimonials slider text */
+/*TESTIMONIALS SECTION */
 .testimonial-title {
   max-width: 67px;
   max-height: 67px;
@@ -129,10 +213,6 @@
   padding-bottom: 100px;
 }
 
-.testimonialsSwiper .swiper-pagination {
-  display: block;
-}
-
 .testimonial-slider-text {
   font-size: 24px;
 }
@@ -145,14 +225,111 @@
   font-size: 20px;
 }
 
-/* Tools section */
+/* Tools slider */
 .toolsSwiper {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+}
+
+/* GENERATION SECTION*/
+.hero {
+  background-image: url("../assets/images/Hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.generation-container {
+  margin-top: 200px;
+}
+
+.generation-content {
+  max-width: 591px;
+}
+
+.generation-btn {
+  max-width: 353px;
+}
+
+.landing-image {
+  scale: 150%;
+  transform-origin: bottom center;
+}
+
+@media screen and (max-width: 1440px) {
+  .landing-image {
+    scale: 100%;
+  }
+
+  .generation-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:1220px){
+   .accordion-title{
+    font-size:28px
+  }
+  .accordion-body .body-subtext{
+    font-size: 20px;
+  }
+  .industtries-title{
+    font-size: 28px;
+  }
+  .industries-text{
+    font-size: 18px;
+  }
+  .testimonial-slider-text {
+    font-size: 20px;
+}
+.testimonial-slider-author {
+    font-size: 24px;
+}
+.testimonial-slider-nickname {
+    font-size: 16px;
+}
+.testimonials-img{
+  width: 64px;
+  height: 64px;
+}
+
+}
+@media screen and (max-width: 1020px) {
+  .choose-content {
+    row-gap: 100px;
+  }
+  .accordion-price{
+    font-size: 20px;
+}
+
 }
 
 @media screen and (max-width: 992px) {
   .lead-container {
-    margin-top: 0px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .feature-card {
+    height: 240px;
+    padding: 3rem;
+  }
+  .product-hero {
+  background-image: url("../assets/images/product-hero-tablet.png");
+  background-size: cover;
+  background-position: center;
+}
+.product-text{
+  max-width: 690px;
+}
+}
+
+@media screen and (max-width: 990px) {
+  .desk-btn-groups {
+    display: none !important;
+  }
+
+  .mob-btn-groups {
+    display: flex !important;
   }
 }
 
@@ -163,17 +340,21 @@
     justify-content: center;
     align-items: flex-start;
   }
-  
+
   .testimonialsSwiper .swiper-wrapper {
     padding-bottom: 50px;
-    }
+  }
 
   .testimonials-content {
     gap: 24px;
   }
 
   .testimonial-slider-text {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .testimonials-img{
+    width: 46px;
+    height: 46px;
   }
 
   .testimonial-slider-author {
@@ -189,12 +370,7 @@
   }
 
   .accordion-body p:first-child {
-    max-width: 345px !important;
-    font-size: 14px;
-  }
-
-  .swiper-pagination {
-    display: block;
+    font-size: 16px;
   }
 
   .swiper-button-next,
@@ -205,5 +381,48 @@
   .industriesSwiper.swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     top: unset !important;
+  }
+
+  .mob-btn-groups {
+    width: 100%;
+    display: flex !important;
+  }
+
+  .mob-btn-groups .btn {
+    width: 100%;
+  }
+
+  .icon-wrapper {
+    width: 61px;
+    height: 61px;
+  }
+
+  .icon-wrapper img {
+    width: 39px !important;
+    height: 39px !important;
+  }
+
+  .feature-card {
+    height: 182px;
+  }
+
+  .feature-card-body {
+    gap: 16px;
+    margin-top: 14px;
+  }
+
+  .industtries-title {
+    font-size: 21px;
+  }
+
+  .industries-text {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width:480px){
+  .toolsSwiper img{
+    width: 300px;
   }
 }

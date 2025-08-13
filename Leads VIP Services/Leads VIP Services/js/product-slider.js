@@ -1,16 +1,7 @@
 var swiper = new Swiper(".industriesSwiper", {
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    769: {
-      slidesPerView: 2,
-    },
-    1021: {
-      slidesPerView: 3,
-    },
-  },
+slidesPerView: 1.2, 
   spaceBetween: 20,
+
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -23,33 +14,56 @@ var swiper = new Swiper(".industriesSwiper", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   mousewheel: true,
   keyboard: true,
+  breakpoints: {
+    400: {
+      slidesPerView: 1.7,
+    },
+    768: { 
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1200: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 24
+    },
+    1400: { 
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 24
+    }
+  }
+
 });
 
 var swiper = new Swiper(".testimonialsSwiper", {
-  spaceBetween: 30,
+slidesPerView: 1.2, 
+  spaceBetween: 20,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
-    0: {
-      slidesPerView: 1,
+    400: {
+      slidesPerView: 1.7,
     },
     769: {
       slidesPerView: 2,
     },
-    1021: {
+    1200: {
       slidesPerView: 3,
     },
   },
 });
 
-var swiper = new Swiper(".toolsSwiper", {
-  slidesPerView: 3,
+ var swiper = new Swiper(".toolsSwiper", {
+  slidesPerView: 1.2, 
   spaceBetween: 20,
   freeMode: true,
   autoplay: {
@@ -61,14 +75,31 @@ var swiper = new Swiper(".toolsSwiper", {
     clickable: true,
   },
   breakpoints: {
-    0: {
-      slidesPerView: 1,
+    500: {
+      slidesPerView: 1.3,
+      spaceBetween: 16
     },
-    769: {
+    600: {
+      slidesPerView: 1.5,
+      spaceBetween: 16
+    },
+    768: { 
       slidesPerView: 2,
+      centeredSlides: false,
     },
-    1021: {
+    992: { 
+      slidesPerView: 2.5,
+      centeredSlides: false,
+    },
+    1200: {
       slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 24
     },
-  },
+    1600: { 
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 24
+    }
+  }
 });
