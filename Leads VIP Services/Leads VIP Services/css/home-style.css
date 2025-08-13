@@ -49,8 +49,8 @@
 
 /*Sell Card*/
 .sell-card {
-  width: 302px;
-  height: 393px;
+  width: 400px;
+  height: 450px;
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
@@ -381,5 +381,11 @@
   .feature-card-body{
     gap:16px;
     margin-top: 14px;
+  }
+}
+@media screen and (max-width:550px){
+  .sell-card{
+  width: 302px;
+  height: 393px;
   }
 }

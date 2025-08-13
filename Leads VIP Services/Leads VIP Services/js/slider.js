@@ -1,6 +1,4 @@
 var swiper = new Swiper(".sellSwiper", {
-   slidesPerView: 1.2, 
-  spaceBetween: 20,
   freeMode: true,
   autoplay: {
     delay: 2500,
@@ -11,23 +9,45 @@ var swiper = new Swiper(".sellSwiper", {
     clickable: true,
   },
   breakpoints: {
-    400: {
-      slidesPerView: 1.7,
-    },
-    768: { 
-      slidesPerView: 2,
+       360:{ 
+      slidesPerView: 1.1,
       centeredSlides: false,
-      spaceBetween: 24
-    },
-    1020: {
-      slidesPerView: 3,
+    },  
+       400:{ 
+      slidesPerView: 1.2,
       centeredSlides: false,
-      spaceBetween: 24
+    },  
+    440:{ 
+      slidesPerView: 1.3,
+      centeredSlides: false,
+    },
+     650:{ 
+      slidesPerView: 1.5,
+      centeredSlides: false,
+    },
+         768:{ 
+      slidesPerView: 1.8,
+      centeredSlides: false,
+    },
+     950:{ 
+      slidesPerView: 2.2,
+      centeredSlides: false,
     },
     1200: { 
+      slidesPerView: 2.5,
+      centeredSlides: false,
+    },
+      1300: { 
+      slidesPerView: 3.1,
+      centeredSlides: false,
+    },
+    1650: { 
       slidesPerView: 4,
       centeredSlides: false,
-      spaceBetween: 24
+    },
+    2300:{
+      slidesPerView: 5,
+      centeredSlides: false,
     }
   }
 });
@@ -45,20 +65,24 @@ var swiper = new Swiper(".sellSwiper", {
     clickable: true,
   },
   breakpoints: {
-    400: {
-      slidesPerView: 1.4,
+   400: {
+      slidesPerView: 1.5,
+      spaceBetween: 16
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 16
     },
     768: { 
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       centeredSlides: false,
-      spaceBetween: 24
     },
-    1020: {
+    1200: {
       slidesPerView: 3,
       centeredSlides: false,
       spaceBetween: 24
     },
-    1200: { 
+    1600: { 
       slidesPerView: 4,
       centeredSlides: false,
       spaceBetween: 24
@@ -173,7 +197,7 @@ function updateSlider(index, direction = 'next') {
       'mobileSlideFade 0.4s ease forwards';
   }
 
-  // Десктопные тексты и цвета
+
   leftTestimonialText.textContent = testimonials[leftIndex].text;
   leftQuoteIcon.style.color = testimonials[leftIndex].quoteColor;
   centerTestimonialText.textContent = testimonials[index].text;
@@ -187,7 +211,6 @@ function updateSlider(index, direction = 'next') {
 
   updateBullets(index);
 
-  // Обновление мобильных swiper-слайдов
   const mobileSlides = document.querySelectorAll('.resultsSwiper .swiper-slide');
   mobileSlides.forEach((slide, i) => {
     const tIndex = getIndex(index + i);
@@ -269,11 +292,6 @@ function updateSlider(index, direction = 'next') {
     startX = 0;
     endX = 0;
   });
-
-
-
-
-
 
 const mobileSlides = document.querySelectorAll('.resultsSwiper .swiper-slide');
 

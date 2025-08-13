@@ -21,9 +21,6 @@
   object-fit: cover;
 }
 
-.swiper-pagination {
-  display: none;
-}
 .swiper-pagination-bullet-active {
   background: var(--color-primary);
     width: 42px;
@@ -50,7 +47,6 @@ p {
   gap: 40px;
 }
 .testimonial {
-  background: #fafafa;
   padding: 32px;
   position: relative;
   flex: 1;
@@ -59,6 +55,9 @@ p {
   min-width: 0;
 }
 .testimonial.center {
+background: #fff;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+border-radius: 12px;
   opacity: 1;
 }
 .testimonial .quote {
@@ -82,7 +81,7 @@ p {
 }
 .testimonial-nav button {
   border: none;
-  background: #fafafa;
+  background: #fff;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -93,6 +92,7 @@ p {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .profile {
   width: 540px;
@@ -158,7 +158,11 @@ p {
   0% { transform: translateX(30px); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
 }
-
+@media screen and (max-width:1600px){
+  .sell-content{
+    padding-right: 0px !important;
+  }
+}
 @media screen and (max-width: 1020px) {
   .profile,
   .testimonials {
@@ -187,11 +191,7 @@ p {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .swiper-pagination {
-    display: block;
-  }
+
   .sellSwiper {
     padding-bottom: 50px;
   }
-}
