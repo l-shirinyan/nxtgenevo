@@ -219,8 +219,12 @@ p,h2{
 .footer-contact-link:hover svg {
   fill: var(--color-white);
 }
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1220px) {
+  .text-header {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
   .text-header {
     font-size: 32px;
   }
