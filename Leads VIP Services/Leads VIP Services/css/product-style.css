@@ -153,7 +153,9 @@
 .faq-content {
   margin-bottom: 48px;
 }
-
+.accordion-button{
+  padding-block: 26.5px !important;
+}
 .accordion-item {
   border-radius: 12px !important;
   overflow: hidden;
@@ -193,6 +195,10 @@
 }
 
 /*TESTIMONIALS SECTION */
+.testimonial-title-content{
+  max-width: 1060px;
+  margin: auto;
+}
 .testimonial-title {
   max-width: 67px;
   max-height: 67px;
@@ -205,7 +211,9 @@
 }
 
 .testimonials-content {
+  padding: 32px;
   gap: 48px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important; 
 }
 
 .swiper-slide:hover {
@@ -245,7 +253,7 @@
 }
 
 .generation-content {
-  max-width: 591px;
+  max-width: 634px;
 }
 
 .generation-btn {
